@@ -1,0 +1,18 @@
+<h3>Sign In</h3>
+<form (ngSubmit)="onSubmit()" class="ui form" [formGroup]="signinForm">
+  <app-input label="Username" inputType="text" [control]="signinForm.controls['username']"></app-input>
+  <app-input label="Password" inputType="password" [control]="signinForm.controls['password']"></app-input>
+
+  <div
+    class="ui red basic label"
+    *ngIf="signinForm.controls['password'].touched &&
+            signinForm.errors">
+
+        <p *ngIf="signinForm.errors['wrongCreds']">
+          Your login credentials are incorrect
+        </p>
+    </div>
+  <div>
+      <button class="ui submit button primary">Submit</button>
+  </div>
+</form>

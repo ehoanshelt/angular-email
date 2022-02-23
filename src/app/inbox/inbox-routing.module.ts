@@ -5,6 +5,7 @@ import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { EmailShowComponent } from './email-show/email-show.component';
 import { EmailResolverService } from './email-resolver.service';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EmailCreateComponent } from './email-create/email-create.component';
 
 const routes: Routes = [
   {

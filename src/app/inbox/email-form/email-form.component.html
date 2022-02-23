@@ -1,0 +1,9 @@
+<form [formGroup]="emailForm" class="ui form">
+   <app-input label="To" inputType="email" [control]="emailForm.controls['to']"></app-input>
+   <app-input label="From" inputType="email" [control]="emailForm.controls['from']"></app-input>
+   <app-input label="Subject" inputType="text" [control]="emailForm.controls['subject']"></app-input>
+   <app-input controlType="textarea" label="Content" inputType="text" [control]="emailForm.controls['text']"></app-input>
+   <button class="ui primary button">
+    <i class="envelope icon"></i>Send Email
+  </button>
+</form>

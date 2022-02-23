@@ -1,17 +1,10 @@
 <div class="ui grid">
     <div class="five wide column">
-      <div class="ui animated vertical button primary" tabindex="0">
-        <div class="visible content">Compose</div>
-        <div class="hidden content">
-          <i class="envelope icon"></i>
-        </div>
-      </div>
-    <div style="margin-top:1em">
+      <app-email-create></app-email-create>
       <app-email-index></app-email-index>
-    </div>
-
     </div>
     <div class="eleven wide column">
       <router-outlet></router-outlet>
     </div>
   </div>
+ 

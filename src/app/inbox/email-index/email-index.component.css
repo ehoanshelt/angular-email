@@ -24,3 +24,7 @@ a.active:before{
   text-overflow: ellipsis;
   width:100%;
 }
+
+.list{
+  margin-top: 1em;
+}

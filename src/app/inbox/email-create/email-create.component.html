@@ -1,1 +1,11 @@
-<p>email-create works!</p>
+<div (click)="showModal = true" class="ui animated vertical button primary fluid" tabindex="0">
+    <div class="visible content">Compose</div>
+    <div class="hidden content">
+      <i class="envelope icon"></i>
+    </div>
+</div>
+<app-modal (dismiss)="showModal = false" *ngIf="showModal">
+    <h3 modalTitle>Compose New Email</h3>
+    <app-email-form [email]="email"></app-email-form>
+    <div modalFooter></div>
+</app-modal>
